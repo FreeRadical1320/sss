@@ -25,21 +25,39 @@
 
 // Console.WriteLine(xNew);
 
-// Task 3
+// // Task 3
+
+// Console.Clear();
+// Console.Write("Please, input x1 = ");
+// int x1 = Convert.ToInt32(Console.ReadLine());
+
+// Console.Write("Please, input x2 = ");
+// int x2 = Convert.ToInt32(Console.ReadLine());
+
+// int result = x1 % x2;
+// if(result == 0)
+// {
+//     Console.WriteLine("Кратно");
+// }
+// else
+// {
+//     Console.WriteLine(result);
+// }
+
+// Task 4
 
 Console.Clear();
-Console.Write("Please, input x1 = ");
-int x1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Please, input x = ");
+int x = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Please, input x2 = ");
-int x2 = Convert.ToInt32(Console.ReadLine());
 
-int result = x1 % x2;
-if(result == 0)
+int result1 = x % 7;
+int result2 = x % 23;
+if(result1 == 0 & result2 == 0)
 {
-    Console.WriteLine("Кратно");
+    Console.WriteLine("Yes");
 }
 else
 {
-    Console.WriteLine(result);
+    Console.WriteLine("No");
 }
