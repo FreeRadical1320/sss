@@ -72,24 +72,42 @@
 // Задача 21: Напишите программу, которая на вход принимает координаты двух точек 
 // и находит расстояние между ними в 2D.
 
+// Console.Clear();
+// Console.Write("Please, input xa = ");
+
+// int xa = Convert.ToInt32(Console.ReadLine());
+
+// Console.Write("Please, input ya = ");
+
+// int ya = Convert.ToInt32(Console.ReadLine());
+
+// Console.Write("Please, input xb = ");
+
+// int xb = Convert.ToInt32(Console.ReadLine());
+
+// Console.Write("Please, input yb = ");
+
+// int yb = Convert.ToInt32(Console.ReadLine());
+
+// double distance = Math.Sqrt(Math.Pow((xb - xa), 2) + Math.Pow((yb - ya), 2));
+
+
+// Console.WriteLine($"The distance between A({xa}, {ya}) and B({xb}, {yb}) is equal: {Math.Round(distance, 2)}.");
+
+
+
+
+// Задача 22: Напишите программу, которая на вход принимает число N 
+// и выдает таблицу квадратов чисел от 1 до N.
+
 Console.Clear();
-Console.Write("Please, input xa = ");
+Console.Write("Please, input N = ");
 
-int xa = Convert.ToInt32(Console.ReadLine());
+int N = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Please, input ya = ");
+for(int i = 1; i <= N; i++)
+{
+    Console.Write($"{Math.Pow(i, 2)}, ");
+}
+Console.WriteLine();
 
-int ya = Convert.ToInt32(Console.ReadLine());
-
-Console.Write("Please, input xb = ");
-
-int xb = Convert.ToInt32(Console.ReadLine());
-
-Console.Write("Please, input yb = ");
-
-int yb = Convert.ToInt32(Console.ReadLine());
-
-double distance = Math.Sqrt(Math.Pow((xb - xa), 2) + Math.Pow((yb - ya), 2));
-
-
-Console.WriteLine($"The distance between A({xa}, {ya}) and B({xb}, {yb}) is equal: {Math.Round(distance, 2)}.");
