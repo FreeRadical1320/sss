@@ -97,18 +97,20 @@ void CountNumsInArray(int[] arr, int lowBorder, int highBorder)
 int[] GetNewProdArray(int[] arr)
 {
     int[] new_arr;
-    if(arr.GetLength(0) % 2 == 0) new_arr = new int[arr.GetLength(0) / 2];
+    int arr_lng = arr.GetLength(0);
+    if(arr_lng % 2 == 0) new_arr = new int[arr_lng/ 2];
     else 
     {
-        new_arr = new int[(arr.GetLength(0) / 2) + 1];
-        new_arr[new_arr.GetLength(0) - 1] = arr[arr.GetLength(0) / 2];
+        new_arr = new int[(arr_lng / 2) + 1];
+        new_arr[new_arr.GetLength(0) - 1] = arr[arr_lng / 2];
     }
-    int j = arr.GetLength(0) - 1;
-    Console.WriteLine(new_arr.GetLength(0));
+    int new_arr_lng = new_arr.GetLength(0);
+    int j = arr_lng - 1;
+    Console.WriteLine(new_arr_lng);
 
-    for (int i = 0; i < new_arr.GetLength(0); i++)
+    for (int i = 0; i < new_arr_lng; i++)
     {
-        if(j >= new_arr.GetLength(0)) 
+        if(j >= new_arr_lng) 
         {
             new_arr[i] = arr[i] * arr[j];
             j--;
